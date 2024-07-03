@@ -29,7 +29,7 @@ export default function TitleScreen() {
       {/* logo with rings */}
       <Animated.View className="bg-amber-500/20 rounded-full" style={{padding: ring2padding}}>
         <Animated.View className="bg-amber-400/20 rounded-full" style={{padding: ring1padding}}>
-        <Image source={require('../../assets/logo2.png')}
+        <Image source={require('../../assets/images/logo2.png')}
             style={{width: hp(20), height: hp(20)}} />
             </Animated.View>
       </Animated.View>
