@@ -23,13 +23,13 @@ export default function TitleScreen() {
   }, []);
 
   return (
-    <View className="flex-1 justify-center items-center space-y-10 bg-amber-400 ">
+    <View className="flex-1 justify-center items-center space-y-10 bg-white ">
       <StatusBar style="light" />  
 
       {/* logo with rings */}
-      <Animated.View className="bg-white/20 rounded-full" style={{padding: ring2padding}}>
-        <Animated.View className="bg-white/20 rounded-full" style={{padding: ring1padding}}>
-        <Image source={require('../../assets/logo2.png')}
+      <Animated.View className="bg-amber-500/20 rounded-full" style={{padding: ring2padding}}>
+        <Animated.View className="bg-amber-400/20 rounded-full" style={{padding: ring1padding}}>
+        <Image source={require('../../assets/images/logo2.png')}
             style={{width: hp(20), height: hp(20)}} />
             </Animated.View>
       </Animated.View>
@@ -37,9 +37,9 @@ export default function TitleScreen() {
 
       {/* tagline */}
       <View className="flex items-center space-y-2">
-        <Text style={{fontSize: hp(2.2)}} className=" font-bold text-white tracking-widest">
-          smart recipes for tiny tummies
-        </Text>
+        {/* <Text style={{fontSize: hp(4)}} className=" font-hi-melody text-gray-800 ">
+          smart yummies for tiny tummies
+        </Text> */}
       </View>
 
     </View>

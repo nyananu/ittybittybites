@@ -2,8 +2,11 @@
 module.exports = {
   content: ["./App.{js,jsx,ts,tsx}", "./src/Screens/**/*.{js,jsx,ts,tsx}", "./src/Components/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'hi-melody': ['"Hi Melody"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
-
+};
