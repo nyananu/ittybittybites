@@ -1,10 +1,9 @@
-import { View, Text, Image } from 'react-native'
-import { StatusBar } from 'expo-status-bar';
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
-import Animated, { useSharedValue, withSpring } from 'react-native-reanimated';
-import React, { useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
-
+import { StatusBar } from 'expo-status-bar';
+import React, { useEffect } from 'react'
+import { Image, Text, View } from 'react-native'
+import Animated, { useSharedValue, withSpring } from 'react-native-reanimated';
+import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 export default function TitleScreen() {
 
@@ -19,7 +18,7 @@ export default function TitleScreen() {
     setTimeout(() => ring1padding.value = withSpring(ring1padding.value+hp(5)), 100);
     setTimeout(() => ring2padding.value = withSpring(ring2padding.value+hp(5.5)), 300);
 
-    setTimeout(()=> navigation.navigate('Home'), 2500)
+    // setTimeout(()=> navigation.navigate('Home'), 2500)
   }, []);
 
   return (
